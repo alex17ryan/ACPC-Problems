@@ -20,10 +20,11 @@ int countSteps(char code[]) {
 
 int main() {
 
-    FILE *input_file, *output_file;
-
     int T, steps[100];
     char code[100];
+    
+    FILE *input_file = fopen("standard_input.txt", "r");
+    FILE *output_file = fopen("standard_output.txt", "r");
 
     fscanf(input_file, "%d", &T);
 
